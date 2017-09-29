@@ -1,0 +1,50 @@
+<div class="row">
+	<form class="col s12" id="form-edit-usuario">
+		<div class="row">
+			<p class="help-block">{general_required}</p>
+		</div>
+
+		<div class="row">
+			<div class="input-field col s6">
+				<input id="nombre" name="nombre" data-campo="nombre" type="text" class="validate" value="{nombre}">
+				<label for="nombre">{usuarios_nombre}*</label>
+			</div>
+			<div class="input-field col s6">
+				<input id="paterno" name="paterno" data-campo="paterno" type="text" class="validate" value="{paterno}">
+				<label for="paterno">{usuarios_paterno}*</label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="input-field col s6">
+				<input id="materno" name="materno" data-campo="materno" type="text" class="validate" value="{materno}">
+				<label for="materno">{usuarios_materno}</label>
+			</div>
+			<div class="input-field col s6">
+				<input id="email" name="email" data-campo="email" type="text" class="validate" value="{mail}">
+				<label for="email">{usuarios_mail}*</label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="input-field col s6">
+				<input id="telefono" name="telefono" data-campo="telefono" type="text" class="validate" value="{telefono}">
+				<label for="telefono">{usuarios_telefono}</label>
+			</div>
+		</div>
+		
+		<button class="btn waves-effect waves-light" type="submit" id="btn-edit-usuario" data-id_usuario="{id_usuario}" data-id_personal="{id_personal}">
+			{lbl_save}
+			<i class="material-icons right">send</i>
+		</button>
+	</form>
+</div>
+
+<div class="fixed-action-btn">
+	<a class="btn-floating btn-large tooltipped" data-tooltip="{lbl_volver}" data-position="top" data-delay="50" data-id_estacion="{id_estacion}" id="btn-volver-estacion-usuarios">
+		<i class="large material-icons">undo</i>
+	</a>
+	<button class="btn-floating btn-large white tooltipped scrollToTop" data-tooltip="Top" data-position="top" data-delay="50">
+		<i class="large material-icons">keyboard_arrow_up</i>
+	</button>
+</div>

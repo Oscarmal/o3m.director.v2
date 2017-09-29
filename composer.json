@@ -1,0 +1,38 @@
+{
+	"description": "Intelligent Solution Framework",
+	"name": "isolution/frameworkci",
+	"type": "project",
+	"homepage": "http://www.isolution.mx",
+	"license": "proprietary",
+	"authors": [
+        {
+            "name": "Oscar Maldonado - O3M" ,
+            "email": "oscar.maldonado@isolution.mx"
+        }
+    ],
+	"support": {
+		"site": "http://www.isolution.mx"
+	},
+	"config": {
+        "vendor-dir": "application/third_party"
+    },
+    "autoload": {
+        "psr-4": {
+            
+        }
+    },
+	"require": {
+		 "php": ">=5.2.4"				
+		,"phpoffice/phpexcel": "1.8.*"
+		,"dompdf/dompdf": "dev-master"
+		,"phpmailer/phpmailer": "5.2.*"
+		,"phpseclib/phpseclib": "~2.0"
+	},
+
+	"suggest": {
+		
+	},
+	"require-dev": {
+		
+	}
+}

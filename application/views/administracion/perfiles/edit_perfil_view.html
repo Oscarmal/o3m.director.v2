@@ -1,0 +1,41 @@
+<div class="row">
+	<div class="fixed-action-btn">
+		<a class="btn-floating btn-large tooltipped" data-tooltip="{lbl_volver}" data-position="top" data-delay="50" href="{base_url}perfiles">
+			<i class="large material-icons">undo</i>
+		</a>
+	</div>
+	<form class="col s12" id="form-edit-perfil">
+		<div class="row">
+			<p class="help-block">{lbl_required}</p>
+		</div>
+		<div class="row">
+			<div class="input-field col s3">
+				<input id="perfil" name="perfil" data-campo="perfil" value="{perfil}" type="text" >
+				<label for="perfil" >{lbl_perfil} *</label>
+			</div>
+			<div class="input-field col s3">
+				<input id="clave_corta" name="clave_corta" data-campo="clave_corta" value="{clave_corta}" type="text">
+				<label id="clave_corta">{lbl_clave_corta} *</label>
+			</div>
+			<div class="input-field col s3">
+				<input id="descripcion" name="descripcion" data-campo="descripcion" value="{descripcion}" type="text">
+				<label for="descripcion" >{lbl_descripcion} </label>
+			</div>
+			<div class="input-field col s3">
+				<button class="btn waves-effect waves-light" type="submit" id="btn-edit-perfil" data-id_perfil="{id_perfil}">
+					{lbl_save}
+				<i class="material-icons right">send</i>
+		</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s8 offset-s2">
+				<h3>MENU</h3>
+				<ul class="collection">
+					{menu_list}
+				</ul>	
+			</div>
+		</div>
+	</form>
+</div>

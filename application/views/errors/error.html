@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<!-- Includes Header -->
+        <meta charset="UTF-8">
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <title> {APPTITLE} </title>
+        <meta name="description" content="{APPTITLE}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="shortcut icon" href="{TEMPLATEPATH}img/favicon.ico" type="image/x-icon">
+        <link href="{TEMPLATEPATH}css/fonts.css" rel="stylesheet" />
+        <link href="{TEMPLATEPATH}bower_components/Materialize/dist/css/materialize.css" rel="stylesheet" type="text/css" />
+        <link href="{TEMPLATEPATH}bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+        <link href="{TEMPLATEPATH}bower_components/code-prettify/src/prettify.css" rel="stylesheet" type="text/css" />
+        <link href="{TEMPLATEPATH}css/admin.css" rel="stylesheet" type="text/css" />
+        <link href="{TEMPLATEPATH}css/themes/light.css" id="ssThemeColor" rel="stylesheet" type="text/css" />
+        <link href="{TEMPLATEPATH}css/themes/main/materialize-red.css" id="ssMainColor" rel="stylesheet" type="text/css" />
+        <link href="{TEMPLATEPATH}css/themes/alternative/red.css" id="ssAlternativeColor" rel="stylesheet" type="text/css" />   
+        {data_css}
+        {data_js}
+	</head>
+	<body>
+        <div id="theme-gradient"></div>
+        <main>
+        <div class="panel-body">
+            <div class="error-wrapper">
+				<div id="code">
+					{codigo}			
+				</div>
+				<h1>{titulo}</h1>
+				<p>{mensaje}</p>
+	            <div class="col l3 s12">
+	                <div class="brand-logo">
+	                    <img src="{base_url}assets/img/logo.png">
+	                    <h5 class="valign"><b class="main-text">Flex</b>Nómina</h5>
+	                </div>
+	            </div>
+            </div>
+            </div>
+        </main>
+    </body>
+</html>

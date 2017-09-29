@@ -1,0 +1,45 @@
+			<main>
+            <div class="login-wrapper">
+				<form id="frmLogin" action="auth" method="post">
+					<div class="panel panel-bordered z-depth-1">
+						<div class="panel-header">
+							<img src="{IMG_PATH}logo.png" width="20%" />
+							<h5>
+								<b class="main-text">Flex</b>Time
+							</h5>
+						</div>
+
+						<div class="panel-body">
+							<div class="row no-gutter margin-bottom-0">
+								<div class="input-field col s12">
+									<i class="material-icons prefix">account_circle</i>
+									<input type="text" name="usuario" id="usuario" required="">
+									<label for="usuario">{username}</label>
+								</div>
+							</div>
+							<div class="row no-gutter margin-bottom-0">
+								<div class="input-field col s12">
+									<i class="material-icons prefix">lock</i>
+									<input type="password" name="clave" id="clave" required="">
+									<label for="clave">{password}</label>
+								</div>
+							</div>
+							<!-- <div>
+								<a onclick="recuperar_password()" class="waves-effect waves-light "><i class="material-icons left">verified_user</i>{recuperar_password}</a>
+							</div> -->
+						</div>						
+						<div class="panel-footer">
+							<div class="right-align">
+								<a id="btnSubmit" name="btnSubmit" class="waves-effect waves-light btn" href="#!"><i class="material-icons right">input</i>{login}</a>
+							</div>
+						</div>
+					</div>
+				</form>
+	            <div class="footer-copyright" style="margin-top: 10px; font-size: 8pt; text-align: center;">
+	                <div class="container">
+	                    {anio} By © <a href="http://www.isolution.mx" target="_blank">Intelligent Solution</a>  
+	                </div>
+	            </div>
+            </div>
+        </main>
+		<div id="modal-custom"></div>

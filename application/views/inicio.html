@@ -1,0 +1,83 @@
+<div class="row">
+	<div class="col s12 m4 l3">
+		<!-- <p class="caption">&nbsp;</p> -->
+            <!-- <div class="divider"></div> -->
+		<div class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="{IMG_PATH}home-image.jpg">							
+			</div>
+			<div class="card-content" title="Click aquí">
+				<span class="card-title activator">{bienvenido}
+				<i class="material-icons right">open_in_new</i>
+				</span>
+			</div>
+			<div class="card-reveal">
+				<span class="card-title">{bienvenido}<i class="material-icons right">close</i></span>
+				<p>{descripcion}</p>
+				<div class="card horizontal">
+					<div class="card-image">
+						<a href="{link_manual_usuario}" title="{download}" target="_blank">
+							<img  src="{IMG_PATH}pdf-user-manual.png">
+						</a>
+					</div>
+					<div class="card-content">
+						<h4>{manual_descripcion}</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--  -->
+	<div class="col s12 m8 l9">
+		<div class="section">
+            <p class="caption" style="font-size: 1.3rem;">{txt_top}</p>
+            <div class="divider"></div>
+            <div id="full-calendar">              
+              <div class="row">
+                <div class="col s12 m4 l3">
+                  <div id='external-events'>    
+                    <h4 class="header">{lbl_eventos}:</h4>
+                    <input type="hidden" id="lectura_TC" name="lectura_TC" value="{lectura_TC}">
+                    <div class='fc-event drag-event color-blue' data-id='1' data-color="color-blue">+ {lbl_homeoffice}</div>
+                    <div class='fc-event drag-event color-green' data-id='2' data-color="color-green">+ {lbl_flextime}</div>
+                    <div class='fc-event drag-event color-orange' data-id='3' data-color="color-orange">+ {lbl_compressed}</div>
+                    <!-- <p>
+                      <input type='checkbox' id='drop-remove' />
+                      <label for='drop-remove'>remove after drop</label>
+                    </p> -->
+                  </div>
+                </div>
+                <div class="col s12 m8 l9">
+                  <div id='calendar'></div>
+                </div>
+              </div>
+            </div>
+        </div>
+	</div>
+</div>
+{data_js}
+
+<div id="presentacion" class="modal modal-fixed-footer full-screen-modal">
+	<div class="modal-content">
+		<embed src="{base_url}assets/docs/HOME_OFFICE_presentacion.pdf" width="100%" height="100%" type='application/pdf'>
+	</div>
+	<div class="modal-footer center">
+		<button class="waves-effect waves-green btn-flat red darken-4" onclick="cancel()" style="float: none; color: white !important;">Cancelar</button>
+		<button class="modal-action modal-close waves-effect waves-green btn-flat green darken-4" style="float: none; color: white !important;">Aceptar</button>
+		<span class="green-text" style="float: none;">
+			<b>Utiliza la barra de desplazamiento para continuar leyendo y al finalizar oprime ACEPTAR.</b>
+		</span>
+	</div>
+</div>
+
+<div id="cuestionario" class="modal modal-fixed-footer full-screen-modal">
+	<form id="form-question">
+		<div class="modal-content">
+			{all_questions}
+		</div>
+		<div class="modal-footer center">
+			<button class="waves-effect waves-green btn-flat red darken-4" onclick="cancel()" style="float: none; color: white !important;">Cancelar</button>
+			<button type="submit" id="save-question" class="waves-effect waves-green btn-flat green darken-4" style="float: none; color: white !important;">Aceptar</button>
+		</div>
+	</form>
+</div>

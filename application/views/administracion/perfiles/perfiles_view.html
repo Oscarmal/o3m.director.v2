@@ -1,0 +1,21 @@
+<div class="fixed-action-btn" >
+	<a class="btn-floating btn-large tooltipped" data-tooltip="{lbl_nuevo_perfil}" data-position="top" data-delay="50" href="{base_url}nuevo-perfil">
+		<i class="large material-icons">mode_edit</i>
+	</a>
+</div>
+
+<table class="datatable bordered" id="table-perfiles">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>{lbl_perfil}</th>
+			<th>{lbl_clave_corta}</th>
+			<th>{lbl_descripcion}</th>
+			<th>{lbl_fecha}</th>
+			<th>{lbl_acciones}</th>
+		</tr>
+	</thead>
+	<tbody>
+		{data_table}
+	</tbody>
+</table>

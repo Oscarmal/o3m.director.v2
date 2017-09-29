@@ -1,0 +1,76 @@
+<div class="row">
+	<div class="fixed-action-btn">
+		<a class="btn-floating btn-large tooltipped" data-tooltip="{lbl_volver}" data-position="top" data-delay="50" href="{base_url}usuarios">
+			<i class="large material-icons">undo</i>
+		</a>
+		<button class="btn-floating btn-large white tooltipped scrollToTop" data-tooltip="Top" data-position="top" data-delay="50">
+			<i class="large material-icons">keyboard_arrow_up</i>
+		</button>
+	</div>
+	<form class="col s12" id="form-create-usuario">
+		<duv class="row">
+			<p class="help-block">{general_required}</p>
+		</duv>
+		<div class="row">
+			<div class="input-field col s4">
+				<input id="nombre" name="nombre" data-campo="nombre" type="text" class="validate required">
+				<label for="nombre">{usuarios_nombre} *</label>
+			</div>
+			<div class="input-field col s4">
+				<input id="paterno" name="paterno" data-campo="paterno" type="text" class="validate required">
+				<label for="paterno">{usuarios_paterno} *</label>
+			</div>
+			<div class="input-field col s4">
+				<input id="materno" name="materno" data-campo="materno" type="text" class="validate">
+				<label for="materno">{usuarios_materno}</label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="input-field col s4">
+				<input id="telefono" name="telefono" data-campo="telefono" type="tel" class="validate">
+				<label for="telefono">{usuarios_telefono}</label>
+			</div>
+			<div class="input-field col s4">
+				<input id="mail" name="mail" data-campo="mail" type="email" class="validate required email">
+				<label for="mail">{usuarios_mail} *</label>
+			</div>
+			<div class="input-field col s4">
+				<input id="expiracion_password" name="expiracion_password" data-campo="expiracion_password" type="text" class="validate" value="91">
+				<label for="expiracion_password">{expiracion_password} *</label>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="input-field col s4">
+				{select_paises}
+				<label class="">{usuarios_pais} *</label>
+			</div>
+			<div class="input-field col s4">
+				<div id="load-empresas">{select_empresas}</div>
+				<label class="active">{usuarios_empresa} *</label>
+			</div>
+			<div class="input-field col s4">
+				<div id="load-sucursales">{select_sucursales}</div>
+				<label class="active">{usuarios_sucursal} *</label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="input-field col s4">
+				{select_perfiles}
+				<label class="">{usuarios_perfil} *</label>
+			</div>
+			<div class="input-field col s4">
+				{select_roles}
+				<label class="">{usuarios_rol} *</label>
+			</div>
+			<div class="input-field col s4">
+				<button class="btn waves-effect waves-light" type="submit" id="btn-create-usuario">
+					{lbl_save}
+					<i class="material-icons right">send</i>
+				</button>
+			</div>
+		</div>
+	</form>
+</div>

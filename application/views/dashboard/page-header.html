@@ -1,0 +1,54 @@
+<div id="nav-content" class="navbar-fixed">
+    <nav>
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="nav-wrapper">
+                    <a href="inicio" class="brand-logo">
+                        <img src="{IMG_PATH}logo.png"/>
+                        <span class="valign">
+                                <b class="main-text">Flex</b>Time
+                        </span>
+                    </a>
+                    <!-- Desktop -->
+                    <ul class="right hide-on-med-and-down">
+                        {MENU_DESKTOP}
+                        <li class="profile ">
+                            <a class="dropdown-button" href="#!" data-activates="dropdown-profile" data-constrainwidth="false" data-beloworigin="true" data-alignment="right">
+                                <div class="valign-wrapper">
+                                    <img src="{IMG_PATH}profiles/profile.png" alt="My profile" class="circle responsive-img margin-right-10">
+                                    {nombre_completo}
+                                    <i class="material-icons dropdown-icon right">arrow_drop_down</i>
+                                </div>
+                            </a>
+                        </li>
+                        <ul id="dropdown-profile" class="dropdown-content">
+                            {reset_password}
+                            <li><a href="{base_url}logout"> Log out </a></li>
+                        </ul>
+                    </ul>                    
+                    
+                    <!-- Mobile -->
+                    <a href="#" data-activates="mobile-demo" class="button-collapse">
+                        <i class="material-icons">menu</i>
+                    </a>
+                </div>
+                <ul class="side-nav" id="mobile-demo">
+                    <li class="logo">
+                        <img src="{IMG_PATH}logo.png"/>
+                        <p>
+                            <b class="main-text">Flex</b>Time
+                        </p>
+                    </li>
+                    {MENU_MOBILE}
+                    <li class="padding-0">
+                        <ul class="collapsible collapsible-accordion">
+                            {MENU_MOBILE_SUBMENUS}                            
+                            {reset_password}
+                            <li><a href="{base_url}logout"> Log out </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
