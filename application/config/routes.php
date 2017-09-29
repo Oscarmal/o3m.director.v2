@@ -64,37 +64,9 @@ $route['recuperar-password']    = 'login/recuperar_password_view';
 //******************************
 //**         Inicio			  **
 //******************************
+$route['template'] 				= 'assets/template';
 $route['inicio'] 				= 'inicio/index';
 
-//******************************
-//**         Solicitudes	  **
-//******************************
-$route['solicitudes'] 			= 'solicitudes/index';
-$route['mis-solicitudes'] 		= 'solicitudes/index';
-$route['calendar-events'] 		= 'solicitudes/calendar_events';
-$route['evento-aceptar'] 		= 'solicitudes/evento_aceptar';
-
-//******************************
-//**      Autorizaciones	  **
-//******************************
-$route['autorizaciones'] 			= 'autorizaciones/index';
-
-//******************************
-//**      Reportes	  		  **
-//******************************
-$route['reportes-result'] 			= 'reportes/result';
-
-//******************************
-//**      Administracion      **
-//******************************
-//Administracion/usuarios
-$route['usuarios']              = 'administracion/usuarios/index';
-$route['nuevo-usuario']         = 'administracion/usuarios/create_user_view';
-$route['editar-usuario']        = 'administracion/usuarios/edit_usuario_view';
-//Administracion/perfiles
-$route['perfiles']              = 'administracion/perfiles/index';
-$route['editar-perfil']         = 'administracion/perfiles/edit_perfil_view';
-$route['nuevo-perfil']          = 'administracion/perfiles/create_perfil_view';
 
 
 //******************************
